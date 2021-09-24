@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.text {
+  font-family: "Oswald", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+header {
+  background-color: black;
+  padding: 3em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-title {
+  color: rgb(248, 129, 17);
+}
+
+.header-description {
+  color: gray;
+  margin-left: 3em;
+  margin-top: 0.5em;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+}
+
+.header-menuitem {
+  color: white;
+  padding-right: 3em;
+}
+
+.header-menuitem:hover {
+  color: rgb(248, 129, 17);
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.base-menu-block {
+  margin: 2em;
+}
+
+.left-menu-block {
+  width: 15em;
+}
+
+.center-block {
+  width: 70em;
+}
+
+.left-menu-head {
+  background-color: rgb(248, 129, 17);
+  color: white;
+  padding: 0.5em;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.left-menu-body {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(231, 231, 231);
+  align-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.left-menu-item {
+  margin: 1em;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.menu-item-down-block {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+button {
+  padding: 0.5em;
+  background-color: rgb(248, 129, 17);
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: linear-gradient(#f5ae00, #f59500) #f5ae00;
+}
+button:active {
+  background: linear-gradient(#f59500, #f5ae00) #f59500;
+}
+
+.signin-a {
+  color: #f59500;
+}
+
+.signin-a:hover {
+  color: #f5ae00;
+}
+
+.films-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.film {
+  padding: 2em 2em 2em 0em;
+}
+
+.film-img {
+  height: 250px;
+  width: 166px;
+  transition: 1s;
+}
+
+.film-img:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+}
+
+.rate-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+td {
+  letter-spacing: 1px;
+}
+
+tbody td {
+  text-align: left;
+}
+
+tfoot th {
+  text-align: right;
+}
