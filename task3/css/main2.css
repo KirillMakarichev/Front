@@ -5,12 +5,15 @@
 .green-container
 {
     display: grid;
-    width: 100px;
-    grid-column-gap: 20%;
-    grid-template-columns: repeat(3, 1fr) auto;
+    column-gap: auto;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .block{
     border-radius: 3px;
     background: hsl(160, 60%, 50%);
+}
+
+.green-block{
+    width: 100px;
 }
