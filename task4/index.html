@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='index.js'></script>
+</head>
+
+<body>
+    <form>
+        <label>number 1</label>
+        <input type="text" name="number1" id="number1" placeholder="enter single digit number" onfocus="onInputFocus(this)" onblur="inputBlur(this)"> <br>
+        +<br>
+        <label>number 2</label>
+        <input type="text" name="number2" id="number2" placeholder="enter single digit number" onfocus="onInputFocus(this) " onblur="inputBlur(this)"><br>
+        <button type="button" class="btn btn-info" onclick="submitSum()" onmouseover="buttonMouseOver(this)" onmouseout="buttonMouseOut(this)">submit</button><br><br>
+        <div class="screen" id="screen1">
+            <label id="result">summa</label>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+.wrapper{
+    display: grid;
+}
+
+.green-container
+{
+    display: grid;
+    width: 100px;
+    grid-column-gap: 20%;
+    grid-template-columns: repeat(3, 1fr) auto;
+}
+
+.block{
+    border-radius: 3px;
+    background: hsl(160, 60%, 50%);
+}
