@@ -1,3 +1,5 @@
+alert(('b' + 'a' + +'a' + 'a').toLowerCase())
+
 class Calculator {
     constructor(number1, number2) {
         this.number1 = number1;
@@ -35,18 +37,18 @@ function submitSum() {
     }
 }
 
-function onInputFocus(x){
+function onInputFocus(x) {
     x.style.background = "yellow";
 }
 
-function inputBlur(x){
+function inputBlur(x) {
     x.style.background = "";
 }
 
-function buttonMouseOver(x){
+function buttonMouseOver(x) {
     x.style.background = "red"
 }
 
-function buttonMouseOut(x){
+function buttonMouseOut(x) {
     x.style.background = ""
 }
