@@ -1,4 +1,5 @@
 alert(('b' + 'a' + +'a' + 'a').toLowerCase())
+alert(Math.pow(5, 5000000) == Infinity);
 
 class Calculator {
     constructor(number1, number2) {
@@ -24,8 +25,12 @@ class Calculator {
 }
 
 function submitSum() {
-    let aValue = document.getElementById("number1").value;
-    let bValue = document.getElementById("number2").value;
+    let aElement = document.getElementById("number1");
+    onInputFocus(aElement, "green");
+    let aValue = aElement.value;
+    let bElement = document.getElementById("number2");
+    onInputFocus(bElement, "green");
+    let bValue = bElement.value;
 
     let result = document.getElementById("result");
     try {
@@ -37,8 +42,9 @@ function submitSum() {
     }
 }
 
-function onInputFocus(x) {
-    x.style.background = "yellow";
+function onInputFocus(x, errorColor) {
+    var color = errorColor == undefined ? "yellow" : errorColor;
+    x.style.background = color;
 }
 
 function inputBlur(x) {
